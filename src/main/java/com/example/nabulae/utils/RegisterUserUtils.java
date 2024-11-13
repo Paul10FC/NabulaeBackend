@@ -9,8 +9,6 @@ public class RegisterUserUtils {
         boolean isValidMessage = user.getMessage() != null && !user.getMessage().isEmpty();
         boolean isValidLocation = user.getLocation() != null && !user.getLocation().isEmpty();
 
-        boolean isValidParams = isValidName && isValidEmail && isValidMessage && isValidLocation;
-
-        return !isValidParams;
+        return isValidName && isValidEmail && isValidMessage && isValidLocation;
     }
 }
